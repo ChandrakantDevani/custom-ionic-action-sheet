@@ -1,14 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+ <!-- this function like header tag in html5 -->
+ <ion-toolbar color=tertiary>
+  <ion-buttons slot="start">
+    <ion-menu-toggle>
+      <ion-button>
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+  </ion-buttons>
+  <ion-title>
+    Modal Component
+  </ion-title>
+</ion-toolbar>
 
+<!-- this is will hold the split pane -->
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+ <ion-button (click)="OpenModel()">
+    Open Modal (Bottom)
+    <ion-icon mode="ios" name="arrow-forward"></ion-icon>
+  </ion-button>
+
 </ion-content>
